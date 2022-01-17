@@ -9,8 +9,8 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
-    meta:{
-      title:'蕃茄鐘',
+    meta: {
+      title: '蕃茄鐘',
       keepAlive: true
     }
   },

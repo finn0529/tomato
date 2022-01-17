@@ -31,5 +31,12 @@ html,body{
   position: absolute;
   top: 20px;
   right: 0;
+  border: none;
+}
+.nav-link{
+  border-radius: 25px 0 0 25px !important;
+}
+.router-link-exact-active{
+  background: #fff;
 }
 </style>
