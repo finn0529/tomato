@@ -1,12 +1,15 @@
 <template lang="pug">
 #app
   b-nav(tabs vertical )
-    b-nav-item.mt-3
+    b-nav-item.mt-3(to='/')
       img(src="../public/img/tomato.png" width="40px")
-    b-nav-item.mt-3
+    b-nav-item.mt-3(to='/setting')
       img(src="../public/img/misic.png" width="40px")
-    b-nav-item.mt-3
+    b-nav-item.mt-3(to='/chart')
       img(src="../public/img/chart.png" width="40px")
+  keep-alive
+  router-view(v-if="$route.meta.keepAlive")
+  router-view(v-if="!$route.meta.keepAlive")
 </template>
 
 <style lang="scss">
