@@ -27,6 +27,6 @@ html,body{
 .nav{
   position: absolute;
   top: 20px;
-  right: 40px;
+  right: 0;
 }
 </style>
