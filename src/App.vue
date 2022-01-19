@@ -20,6 +20,7 @@ html,body{
   justify-content: center;
   align-items: center;
   margin: 0;
+  overflow: hidden;
 }
 #app{
   height: 100%;
