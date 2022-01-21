@@ -1,10 +1,10 @@
 <template lang="pug">
 #setting
-  b-container.m-5
+  b-container
     b-row
       b-col(cols="6")
         .d-flex
-          img(src="../../public/img/tomato.png")
+          img(src="../assets/img/tomato.png")
           h2.ml-3 Work Ringrone
         hr
         .alert
@@ -12,13 +12,13 @@
             b-form-radio(name="work" :value="item" @change="selectWork") {{ item.name }}
       b-col(cols="6")
         .d-flex
-          img(src="../../public/img/tomato.png")
+          img(src="../assets/img/tomato.png")
           h2.ml-3 Break Ringrone
         hr
         .alert
           b-form-group(v-for="item in items")
             b-form-radio(name="break" :value="item" @change="selectBreak") {{ item.name }}
-  img.group39(src="../../public/img/Group 39.png")
+  img.group39(src="../assets/img/Group 39.png")
 </template>
 
 <style lang="scss">
